@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="hogwarts@localhost" uuid="aa20dd87-e3bd-48be-9c08-d52b6077b5c3">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/hogwarts</jdbc-url>
-    </data-source>
     <data-source source="LOCAL" name="default/Hibernate" uuid="44ad4a48-e163-4a7e-b39d-9e218c77b02d">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
@@ -16,6 +10,13 @@
 /Users/crisgomal/Dropbox/Vigo/DAM-M6/IdeaProjects/hogwarts/src/main/resources/META-INF/persistence.xml</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/hogwarts</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hogwarts@localhost" uuid="da56e1e6-2389-4499-9964-714724ff718e">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hogwarts</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
 </project>

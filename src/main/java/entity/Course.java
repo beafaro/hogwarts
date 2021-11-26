@@ -52,8 +52,8 @@ public class Course {
 
     @ManyToMany(cascade = CascadeType.DETACH)
     @JoinTable(name="enrollment",
-            joinColumns={@JoinColumn(name="person_enrollment")},
-            inverseJoinColumns={@JoinColumn(name="course_enrollment")})
+            joinColumns={@JoinColumn(name="course_enrollment")},
+            inverseJoinColumns={@JoinColumn(name="person_enrollment")})
     public List<Person> getPeople() { return people; }
 
     public void setPeople(List<Person> people) {
