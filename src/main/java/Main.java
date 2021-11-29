@@ -22,3 +22,11 @@ public class Main {
         }
     }
 }
+/*
+* select p from Person p JOIN p.courses c WHERE c.name='Potions'
+
+Si queremos parametrizar la consulta para que sea flexible:
+
+Opción 1: select p from Person p JOIN p.courses c WHERE c.name=?1
+Opción 2: select p from Person p JOIN p.courses c WHERE c.name=:nombreCurso
+* */

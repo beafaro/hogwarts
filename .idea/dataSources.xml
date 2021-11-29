@@ -11,7 +11,7 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/hogwarts</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="hogwarts@localhost" uuid="da56e1e6-2389-4499-9964-714724ff718e">
+    <data-source source="LOCAL" name="hogwarts@localhost" uuid="d70bd0f9-0337-46d0-87c3-54dfe66be34f">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
