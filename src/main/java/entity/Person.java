@@ -5,6 +5,9 @@ import java.util.List;
 
 @Entity
 @Table(name="person")
+@NamedQuery(name="person.maxPuntos", query = "select p from Person p, HousePoints hp where " +
+        "hp.points>= all (select sum(points) from HousePoints group by personByReceiver) and " +
+        "p.id=hp.personByReceiver.id")
 public class Person {
     private int id;
     private String firstName;

@@ -4,6 +4,11 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "house_points", schema = "hogwarts", catalog = "")
+@NamedQuery(name= "persona.EntregaPuntos", query="select p.firstName as nombre, p.lastName as apellido" +
+        " from Person p, HousePoints hp" +
+        " where hp.points = (select MAX(hp.points) from HousePoints hp)" +
+        " and p.id=hp.personByGiver.id")
+
 public class HousePoints {
     private int id;
     private Integer points;
